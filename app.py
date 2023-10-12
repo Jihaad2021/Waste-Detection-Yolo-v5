@@ -11,3 +11,8 @@ import sys
     
 #except Exception as e:
 #    raise AppException(e, sys)
+
+from wasteDetection.pipeline.training_pipeline import TrainPipeline
+
+obj = TrainPipeline()
+obj.run_pipeline()
