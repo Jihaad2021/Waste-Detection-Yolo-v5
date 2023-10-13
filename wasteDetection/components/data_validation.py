@@ -4,7 +4,7 @@ import shutil
 from wasteDetection.logger import logging
 from wasteDetection.exception import AppException
 from wasteDetection.entity.config_entity import DataValidationConfig
-from wasteDetection.entity.artifacts_entity import (DataIngestionArtifact, DataValidationArticat)
+from wasteDetection.entity.artifacts_entity import (DataIngestionArtifact, DataValidationArtifact)
 
 class DataValidation:
     def __init__(
@@ -39,7 +39,7 @@ class DataValidation:
             raise AppException(e, sys)
         
     
-    def initiate_data_validation(self) -> DataValidationArticat:
+    def initiate_data_validation(self) -> DataValidationArtifact:
         logging.info("Entered initiate_data_validation method of DataValidation class")
         
         try: 
